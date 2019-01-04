@@ -9606,9 +9606,20 @@ section .container ul li {
   bottom: 0;
 }
 
-.decorationlibe {
+.decorationline {
   position: absolute;
   bottom: 50%;
+}
+
+.section2 {
+  background-image: url("../../Public/images/team_background.jpg");
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.meet {
+  color: #b12a3b;
 }
 
 /*# sourceMappingURL=style.css.map */
