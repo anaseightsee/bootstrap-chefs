@@ -9650,4 +9650,35 @@ section .container ul li {
   text-align: center;
 }
 
+.section4 {
+  background-image: url("../../Public/images/testimonials_background.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.section4 .row .col-4 img {
+  width: 35%;
+  border: 5px solid #fff;
+  margin: 10px;
+}
+
+.img-left {
+  float: left;
+}
+
+.img-right {
+  float: right;
+}
+
+.testimonials {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.manager {
+  color: #b12a3b;
+}
+
 /*# sourceMappingURL=style.css.map */
