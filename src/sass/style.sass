@@ -14,8 +14,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6
+h5
     font-family: 'Courgette', cursive
 
 .active
@@ -60,7 +59,7 @@ h6
     left: 0
     top: 0
 
-.container
+.section .container
     position: relative
     overflow: hidden
 
@@ -103,3 +102,34 @@ section .container ul li
     color: $maincolor
 
 // SECTION2 END
+
+// SECTION3 START
+
+.section3
+    background-image: url('../../Public/images/main_bg.jpg')
+    background-repeat: repeat
+    width: 100%
+    position: relative
+
+// .topleft ; .topright ; .bottomleft and .bottomright are already bound in the first section as they keep the same values in the other sections
+
+
+.section3 .container
+    position: relative
+    padding: 50px
+
+.section3 .table
+    background-image: url('../../Public/images/book_table_bg.jpg')
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 70%
+
+.blog
+    margin-bottom: -10px
+    background-color: $maincolor
+    font-size: 2em
+    color: #fff
+    border-radius: 50px
+    text-align: center
+// SECTION3 END

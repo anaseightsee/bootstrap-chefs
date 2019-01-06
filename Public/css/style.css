@@ -9522,8 +9522,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   font-family: "Courgette", cursive;
 }
 
@@ -9576,7 +9575,7 @@ h6 {
   top: 0;
 }
 
-.container {
+.section .container {
   position: relative;
   overflow: hidden;
 }
@@ -9620,6 +9619,35 @@ section .container ul li {
 
 .meet {
   color: #b12a3b;
+}
+
+.section3 {
+  background-image: url("../../Public/images/main_bg.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  position: relative;
+}
+
+.section3 .container {
+  position: relative;
+  padding: 50px;
+}
+
+.section3 .table {
+  background-image: url("../../Public/images/book_table_bg.jpg");
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.blog {
+  margin-bottom: -10px;
+  background-color: #b12a3b;
+  font-size: 2em;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
