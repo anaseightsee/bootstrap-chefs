@@ -1,5 +1,8 @@
 @import './_variables.scss'
-
+@font-face 
+    font-family: courgette
+    src: url('../../Public/fonts/Courgette/Courgette-Regular.ttf')
+    
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'
 
 
@@ -15,14 +18,24 @@ h2,
 h3,
 h4,
 h5
-    font-family: 'Courgette', cursive
+    font-family: courgette
 
-.active
+header li:hover
+    background-color: rgb(177, 42, 59, 0.5)
+
+.mainpage
     background-color: $maincolor
 
+.taste
+    line-height: 12px
+
 .bannertitle
-    margin: 150px 300px 0 300px
     text-align: center
+    margin: 10rem
+    font-size: 2rem
+
+.purchase
+    padding: 4rem
 
 .taste,
 .our
@@ -35,13 +48,18 @@ h5
 .our
     font-size: 1.5em
 
-.pages
-    margin-top: 200px
+
+.bottomdecoration
+    background-image: url('../../Public/images/bottom_decoration_img.png')
+    width: 100%
+    background-color: #2E2E2E
+    height: 10px
+
 //HEADER END//
 
 //SECTION1 START//
 .section
-    background-image: url("../images/main_bg.jpg")
+    background-image: url("../../Public/images/main_bg.jpg")
     background-repeat: repeat
     width: 100%
     overflow: hidden
@@ -59,6 +77,9 @@ h5
     left: 0
     top: 0
 
+// .section .container ul li
+//     border: 10px solid $maincolor
+
 .section .container
     position: relative
     overflow: hidden
@@ -69,8 +90,16 @@ h5
     right: 0
     top: 0
 
-section .container ul li
-    font-size: 50px
+.section .container .row .col-6 .media img
+    border: 5px solid #e1e1e0
+    width: 25%
+    margin: .5em
+
+.section .container .row .col-6 .media-body span
+    float: right
+    background-color: #e1e1e0
+    padding: .2em
+    marging: .1em
 
 .bottomleft
     background-repeat: no-repeat
@@ -109,7 +138,7 @@ section .container ul li
     background-image: url('../../Public/images/main_bg.jpg')
     background-repeat: repeat
     width: 100%
-    position: relative
+    position: relative  
 
 // .topleft ; .topright ; .bottomleft and .bottomright are already bound in the first section as they keep the same values in the other sections
 
@@ -118,6 +147,12 @@ section .container ul li
     position: relative
     padding: 50px
 
+.section3 .container .row .col-6 img
+    border: 5px solid #e1e1e0
+
+.section3 .container .row .col-6 .btn
+    border: $maincolor
+
 .section3 .table
     background-image: url('../../Public/images/book_table_bg.jpg')
     display: block
@@ -125,13 +160,13 @@ section .container ul li
     margin-right: auto
     width: 70%
 
-.blog
-    margin-bottom: -10px
+.blogtxt
     background-color: $maincolor
-    font-size: 2em
-    color: #fff
-    border-radius: 50px
+    font-size: 1.5em
+    border-radius: 5px
     text-align: center
+    margin-top: -50px
+
 // SECTION3 END
 
 // SECTION4 START
@@ -141,16 +176,16 @@ section .container ul li
     width: 100%
     background-repeat: no-repeat
 
-.section4 .row .col-4 img
-    width: 35%
+.section4 .row .col-2 img
+    width: 70%
     border: 5px solid #fff
     margin: 10px
 
-.img-left
-    float: left
+// .img-left
+//     float: left
 
-.img-right
-    float: right
+// .img-right
+//     float: right
 
 .testimonials
     border: 1px solid #fff
@@ -168,7 +203,6 @@ section .container ul li
     background-image: url('../../Public/images/main_bg.jpg')
     background-repeat: repeat
     width: 100%
-    overflow: hidden
 
 .contact
     background-color: $maincolor
@@ -176,7 +210,7 @@ section .container ul li
     border-radius: 20px
     margin-left: auto
     margin-right: auto
-    width: 25%
+    width: 35%
     margin-bottom: 50px
     margin-top: 50px
         
@@ -194,11 +228,18 @@ footer
     width: 100%
     background-repeat: no-repeat
 
+.footerdecoration
+    background-image: url('../../Public/images/footer_bottom_decoration_img.png')
+    width: 100%
+    background-color: #2E2E2E
+    height: 10px
+
 footer h6
     font-size: 2em
     margin-top: 50px
     margin-bottom: 30px
 
+    
 .underfooter
     padding: 50px
     background-color: $maincolor
