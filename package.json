@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-chefs-exo",
+  "name": "bootstrap_chefs_2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,6 @@
     "bootstrap": "^4.2.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.6.3"
+    "@fortawesome/fontawesome-free": "^5.7.1"
   }
 }

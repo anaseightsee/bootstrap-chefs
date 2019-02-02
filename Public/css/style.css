@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: courgette;
-  src: url("../../Public/fonts/Courgette/Courgette-Regular.ttf");
+  src: url("../../public/fonts/Courgette/Courgette-Regular.ttf");
 }
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
@@ -9521,6 +9521,9 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+header li:hover {
+  background-color: rgba(177, 42, 59, 0.5);
+}
 
 h1,
 h2,
@@ -9528,10 +9531,6 @@ h3,
 h4,
 h5 {
   font-family: courgette;
-}
-
-header li:hover {
-  background-color: rgba(177, 42, 59, 0.5);
 }
 
 .mainpage {
@@ -9566,26 +9565,40 @@ header li:hover {
 }
 
 .bottomdecoration {
-  background-image: url("../../Public/images/bottom_decoration_img.png");
+  background-image: url("../../public/images/bottom_decoration_img.png");
   width: 100%;
   background-color: #2E2E2E;
   height: 10px;
 }
 
 .section {
-  background-image: url("../../Public/images/main_bg.jpg");
+  background-image: url("../../public/images/main_bg.jpg");
   background-repeat: repeat;
   width: 100%;
   overflow: hidden;
 }
-
-.par1 {
-  margin: 0 15em;
+.section .container {
+  position: relative;
+  overflow: hidden;
 }
-
 .section .container span {
   text-size: 5em;
   color: #b12a3b;
+}
+.section .container .row .col-6 .media img {
+  border: 5px solid #e1e1e0;
+  width: 25%;
+  margin: 0.5em;
+}
+.section .container .row .col-6 .media-body span {
+  float: right;
+  background-color: #e1e1e0;
+  padding: 0.2em;
+  marging: 0.1em;
+}
+
+.par1 {
+  margin: 0 15em;
 }
 
 .topleft {
@@ -9595,29 +9608,11 @@ header li:hover {
   top: 0;
 }
 
-.section .container {
-  position: relative;
-  overflow: hidden;
-}
-
 .topright {
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.section .container .row .col-6 .media img {
-  border: 5px solid #e1e1e0;
-  width: 25%;
-  margin: 0.5em;
-}
-
-.section .container .row .col-6 .media-body span {
-  float: right;
-  background-color: #e1e1e0;
-  padding: 0.2em;
-  marging: 0.1em;
 }
 
 .bottomleft {
@@ -9640,7 +9635,7 @@ header li:hover {
 }
 
 .section2 {
-  background-image: url("../../Public/images/team_background.jpg");
+  background-image: url("../../public/images/team_background.jpg");
   width: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -9651,27 +9646,23 @@ header li:hover {
 }
 
 .section3 {
-  background-image: url("../../Public/images/main_bg.jpg");
+  background-image: url("../../public/images/main_bg.jpg");
   background-repeat: repeat;
   width: 100%;
   position: relative;
 }
-
 .section3 .container {
   position: relative;
   padding: 50px;
 }
-
 .section3 .container .row .col-6 img {
   border: 5px solid #e1e1e0;
 }
-
 .section3 .container .row .col-6 .btn {
   border: #b12a3b;
 }
-
 .section3 .table {
-  background-image: url("../../Public/images/book_table_bg.jpg");
+  background-image: url("../../public/images/book_table_bg.jpg");
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -9687,11 +9678,10 @@ header li:hover {
 }
 
 .section4 {
-  background-image: url("../../Public/images/testimonials_background.jpg");
+  background-image: url("../../public/images/testimonials_background.jpg");
   width: 100%;
   background-repeat: no-repeat;
 }
-
 .section4 .row .col-2 img {
   width: 70%;
   border: 5px solid #fff;
@@ -9710,9 +9700,13 @@ header li:hover {
 }
 
 .section5 {
-  background-image: url("../../Public/images/main_bg.jpg");
+  background-image: url("../../public/images/main_bg.jpg");
   background-repeat: repeat;
   width: 100%;
+}
+.section5 .contact hr {
+  border-top: 1px solid #ccc;
+  padding: 0;
 }
 
 .contact {
@@ -9726,28 +9720,22 @@ header li:hover {
   margin-top: 50px;
 }
 
-.section5 .contact hr {
-  border-top: 1px solid #ccc;
-  padding: 0;
-}
-
 footer {
-  background-image: url("../../Public/images/footer_background.jpg");
+  background-image: url("../../public/images/footer_background.jpg");
   width: 100%;
   background-repeat: no-repeat;
 }
-
-.footerdecoration {
-  background-image: url("../../Public/images/footer_bottom_decoration_img.png");
-  width: 100%;
-  background-color: #2E2E2E;
-  height: 10px;
-}
-
 footer h6 {
   font-size: 2em;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+
+.footerdecoration {
+  background-image: url("../../public/images/footer_bottom_decoration_img.png");
+  width: 100%;
+  background-color: #2E2E2E;
+  height: 10px;
 }
 
 .underfooter {
